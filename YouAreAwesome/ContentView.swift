@@ -98,7 +98,7 @@ struct ContentView: View {
             audioPlayer = try AVAudioPlayer(data: soundFile.data)
             audioPlayer.play()
         } catch {
-            print("ERRPR: \(error.localizedDescription) creating audioPlayer.")
+            print("ERROR: \(error.localizedDescription) creating audioPlayer.")
         }
     }
     
